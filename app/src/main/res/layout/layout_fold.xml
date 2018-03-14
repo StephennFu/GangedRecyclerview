@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="85dp"
+  android:orientation="vertical"
+  android:weightSum="1"
+  android:layout_alignParentBottom="true"
+  android:id="@+id/layout_fold"
+  >
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.35"
+    android:background="@color/color_baclground_titleNavigator"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+      android:id="@+id/title_navigator_img"
+      android:layout_width="30dp"
+      android:layout_height="0dp"
+      android:layout_weight="0.35"
+      android:layout_gravity="center_horizontal"
+      app:srcCompat="@drawable/ic_arrow_down_o" />
+
+    <TextView
+      android:id="@+id/title_navigator_name"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="0.65"
+      android:layout_gravity="center_horizontal"
+      android:text="@string/GeneralClass"
+      tools:text="@string/GeneralClass" />
+
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.65"
+    >
+
+    <FrameLayout
+      android:id="@+id/single_lin_fragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white_back"></FrameLayout>
+
+  </LinearLayout>
+
+
+  </LinearLayout>

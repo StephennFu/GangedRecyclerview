@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">GangedRecyclerview</string>
+    <string name="app_name" >GangedRecyclerview</string>
+    <string name="GeneralClass">通俗分类</string>
+    <string name="scan_more">查看更多</string>
+    <string name="release_scan_more">释放查看</string>
+    <string name="block_canary_display_activity_label">Blocks</string>
 </resources>

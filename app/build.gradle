@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -29,5 +30,14 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.google.code.gson:gson:2.7'
+    compile 'com.android.support:support-v4:25.3.1'
+//    compile group: 'com.github.moduth', name: 'blockcanary-core', version: '1.2.1'
     testCompile 'junit:junit:4.12'
+//    compile files('libs/nineoldandroids-2.4.0.jar')
+
+    compile 'com.github.markzhai:blockcanary-android:1.5.0'
+// 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
+//    debugCompile 'com.github.moduth:blockcanary-android:1.2.1'
+//    releaseCompile 'com.github.moduth:blockcanary-no-op:1.2.1'
+
 }

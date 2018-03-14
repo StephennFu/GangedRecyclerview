@@ -14,7 +14,10 @@ buildscript {
 
 allprojects {
     repositories {
+//        maven {url 'http://central.maven.org/maven2/'}
+//        maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
         jcenter()
+//        maven{ url 'http://maven.oschina.net/content/groups/public/'}
     }
 }
 

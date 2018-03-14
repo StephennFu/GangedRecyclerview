@@ -169,4 +169,7 @@
 
     <color name="circleindexview_sub_gray">#c4c4c4</color>
     <color name="circleindexview_main_text">#5b5b5b</color>
+
+    <color name="color_background_silver">#C0C0C0</color>
+    <color name="color_baclground_titleNavigator">#d3d3d3</color>
 </resources>

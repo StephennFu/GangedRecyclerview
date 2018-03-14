@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="210dp"
+  android:orientation="vertical"
+  android:weightSum="3.5"
+  android:id="@+id/layout_unfold"
+  android:layout_alignParentBottom="true"
+  android:background="@android:color/transparent"
+  >
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.5"
+      android:background="@color/color_baclground_titleNavigator"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:weightSum="1"
+      android:id="@+id/unfold_menu_bar">
+      <TextView
+        android:id="@+id/title_navigator_name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/GeneralClass"
+        tools:text="@string/GeneralClass" />
+      <ImageView
+        android:id="@+id/title_navigator_img"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_arrow_down_o" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="3"
+      android:orientation="vertical"
+      android:weightSum="3">
+
+      <FrameLayout
+        android:id="@+id/lin_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:layout_marginLeft="@dimen/dp_10"
+        ></FrameLayout>
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sort"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/white_back"
+        android:orientation="horizontal" />
+      </LinearLayout>
+ </LinearLayout>

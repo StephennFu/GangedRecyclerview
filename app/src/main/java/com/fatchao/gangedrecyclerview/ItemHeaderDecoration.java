@@ -76,13 +76,13 @@ public class ItemHeaderDecoration extends RecyclerView.ItemDecoration {
                 }
             }
 
-
         }
         drawHeader(parent, pos, canvas);
         if (isTranslate) {
             canvas.restore();
         }
-        Log.d("tag--->", tag + "VS" + currentTag);
+
+        Log.d("tag--->", tag + " VS " + currentTag);
         if (!TextUtils.equals(tag, currentTag)) {
             currentTag = tag;
             Integer integer = Integer.valueOf(tag);
@@ -104,7 +104,7 @@ public class ItemHeaderDecoration extends RecyclerView.ItemDecoration {
         RecyclerView.LayoutParams lp = (RecyclerView.LayoutParams) topTitleView.getLayoutParams();
         if (lp == null) {
             lp = new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);//这里是根据复杂布局layout的width height，new一个Lp
-            topTitleView.setLayoutParams(lp);
+//            topTitleView.setLayoutParams(lp);
         }
         topTitleView.setLayoutParams(lp);
         if (lp.width == ViewGroup.LayoutParams.MATCH_PARENT) {
